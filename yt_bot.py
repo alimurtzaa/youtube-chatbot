@@ -72,7 +72,7 @@ if submit and youtube_url and question:
         # print(vector_store.get_by_ids(['9a394b9c-edd6-4b08-b95f-b19dcbb83d0b']))
 
         # Creating a retriever to fetch relevant docs
-        retriver = vector_store.as_retriever(search_type='similarity', search_kwargs={'k': 2})
+        retriver = vector_store.as_retriever(search_type='similarity', search_kwargs={'k': 4})
 
         # Dynamic template
         template = PromptTemplate(
