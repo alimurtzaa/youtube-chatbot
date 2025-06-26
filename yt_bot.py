@@ -100,8 +100,6 @@ if submit and youtube_url and question:
         # Chaining everything
         final_chain = parallel_chain | template | llm | parser
 
-        question = "summarize the video"
-
         try:
             answer = final_chain.invoke(question)
             st.success("✅ Answer:")
